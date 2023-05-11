@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Detector - About</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+			<div class="container">
+                <div class="row">
+                    <div class="col">
+						<div class="logo">
+							<a href="{{ url_for('index') }}"><img src="../static/recipe-detector.png" height="95" width="300" alt="Recipe Detector"/></a>
+						</div>
+					</div>
+					<div class="col">
+						<div class="menu">
+							<ul>
+								<li><a href="{{ url_for('index') }}">Home</a></li>
+								<li class="active"><a href="{{ url_for('about') }}">About</a></li>
+								<li><a href="{{ url_for('contact') }}">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+			<div class="row">
+				<div class="col-9 selector">
+					<div class="row">
+						<div class="col-8 padding-40">
+							<h2 class="gray" style="margin-bottom: 20px">About Recipe Detector</h2>
+							<p style="margin-bottom: 0px">Recipe Detector is a website that helps you find recipes based on the ingredients you have or search for specific recipes using our search feature. We use the Spoonacular API to provide recipe recommendations and information.</p>
+						</div>
+						<div class="col-4 bg-about">
+						</div>
+					</div>
+				</div>
+				
+			</div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; Recipe Detector 2023. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

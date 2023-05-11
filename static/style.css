@@ -1,0 +1,181 @@
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 16px;
+  color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #ffffff;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.gray {color:#9b9997}
+
+.green-dark {color:#257911}
+
+.padding-40 {padding: 40px !important}
+
+.menu ul {
+  margin: 34px 0px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu li {
+	margin: 0 0 0 40px;
+	letter-spacing: .05em;
+}
+
+.menu a {
+  color: #939291;
+  text-decoration: none;
+}
+
+.menu .active a {
+text-decoration: solid underline #9cd190 2px;
+	text-underline-offset: 0.5em;
+	color:#9cd190;
+}
+
+.selector {
+	margin: 0 auto;
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+.bg-home {
+  background-image: url("recipe-detector-home.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 444px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.bg-about {
+  background-image: url("recipe-detector-about.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 234px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/* Main */
+main {
+  background-color: #ebf7e9;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 110px);
+}
+
+.container {
+  max-width: 600px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #444;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+	border: none;
+	border: 1px solid #dcedd7;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 10px;
+	width: 100%;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+input, optgroup, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	border: none;
+	border: 1px solid #dcedd7;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 10px;
+	width: 100%;
+	margin-top: 0px;
+	margin-bottom: 20px !important;
+}
+
+button {
+	background-color: #9cd190;
+	color: #257911;
+	border-radius: 10px;
+	margin-top: 10px;
+	border: none;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 10px 30px;
+	cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #9cd190;
+	color: #257911;
+	border-radius: 10px;
+	margin-top: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #257911;
+	color: #9cd190;
+}
+
+/* Footer */
+footer {
+  background-color: #9cd190;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+}
+
